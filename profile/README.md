@@ -1,5 +1,9 @@
 # Dalgo - Data Access Layer in GO language
 
+Provides a consistent and flexible API for working with different types of databases in Go. By providing a single interface for different types of databases, Dalgo allows developers to write code that is agnostic to the underlying data store. This can help reduce development time and improve code maintainability, while also providing the flexibility to choose the data store that best suits their needs.
+
+It includes an easy-to-use API for querying, inserting, updating, and deleting records, as well as features for handling errors and logging. It also supports transactions.
+
 ## 📦 Modules & Packages
 
 - [github.com/dal-go/dalgo](https://github.com/dal-go/dalgo) - core package. Go there for docs & more details. Consider giving it a ⭐ 😉.
