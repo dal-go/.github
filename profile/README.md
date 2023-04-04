@@ -18,5 +18,7 @@ It includes an easy-to-use API for querying, inserting, updating, and deleting r
 - [`github.com/dal-go/dalgo2badger`](https://github.com/dal-go/dalgo2badger) - Badger is a DB written in Go that can persist to local storage.
 - [`github.com/dal-go/dalgo2buntdb`](https://github.com/dal-go/dalgo2buntdb) - BuntDB is in-memory DB written in Go.
 
+All qualified adapters are passing [`dalgo-end2end-tests`](https://github.com/dal-go/dalgo-end2end-tests). If you developed an adapter and it passes the end-to-end tests it can be added here - please submit a PR.
+
 # 🍿 Demo & Examples of usage
 - [github.com/dal-go/dalgo-demo](https://github.com/dal-go/dalgo-demo)
