@@ -2,10 +2,10 @@
 
 ## Modules & Packages
 
-- [github.com/dal-go/dalgo](https://github.com/dal-go/dalgo)
+- [github.com/dal-go/dalgo](https://github.com/dal-go/dalgo) - core package. Go there for docs & more details.
 
 ## Mocks for your tests
-- [github.com/dal-go/mocks4dalgo](https://github.com/dal-go/mocks4dalgo)
+- [github.com/dal-go/mocks4dalgo](https://github.com/dal-go/mocks4dalgo) - makes testing your code that uses Dalgo easier.
 
 ## Adapters to databases:
 - [github.com/dal-go/dalgo2sql](https://github.com/dal-go/dalgo2sql) - uses standard Go SQL package
