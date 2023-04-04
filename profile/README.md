@@ -1,4 +1,4 @@
-# 🗿 DALgo - Data Access Layer in GO language
+# Dalgo - Data Access Layer in GO language
 
 ## 📦 Modules & Packages
 
