@@ -25,7 +25,7 @@ All qualified adapters are passing [`dalgo-end2end-tests`](https://github.com/da
 # 🍿 Demo & Examples of usage
 - [github.com/dal-go/dalgo-demo](https://github.com/dal-go/dalgo-demo)
 
-# 🔥 Used in
+# 🔥 Used by
 - [`github.com/bots-go-framework`](https://github.com/bots-go-framework)
 
 Submit a PR for adding a link here if you use Dalgo in your open source project.
