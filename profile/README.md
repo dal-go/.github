@@ -27,3 +27,5 @@ All qualified adapters are passing [`dalgo-end2end-tests`](https://github.com/da
 
 # 🔥 Used in
 - [`github.com/bots-go-framework`](https://github.com/bots-go-framework)
+
+Submit a PR for adding a link here if you use Dalgo in your open source project.
