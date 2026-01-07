@@ -27,5 +27,6 @@ All qualified adapters are passing [`dalgo-end2end-tests`](https://github.com/da
 
 # 🔥 Used by
 - [`github.com/bots-go-framework`](https://github.com/bots-go-framework)
+- [datatug-cli](https://github.com/datatug/datatug-cli) - Context-aware data viewer & collaborative query manager for effortless exploration of related data — CLI + Web UI
 
 Submit a PR for adding a link here if you use Dalgo in your open source project.
