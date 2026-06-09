@@ -1,4 +1,4 @@
-# Dalgo - Database Abstraction Layer in GO language
+# [DAlgo](https://dalgo.io/) - Database Abstraction Layer in GO language
 
 Provides a consistent, flexible & implementation agnostic Go API for working with different types of databases.
 By providing a single interface for different types of databases, Dalgo allows developers to write code that is agnostic to the underlying data store.
