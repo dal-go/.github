@@ -1,0 +1,45 @@
+name: Organization profile
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      verify_live_target:
+        description: Run only after the matching dalgo-io landing deployment is verified.
+        required: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  profile-structure:
+    name: Profile structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate the profile's access-policy entry
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f profile/README.md
+          grep -Fq '## 🛡️ Portable Access Policies' profile/README.md
+          grep -Fq 'https://dalgo.io/access-policies/' profile/README.md
+          grep -Fq 'https://github.com/dal-go/dalgo/blob/main/docs/access-policies.md' profile/README.md
+  public-target:
+    name: Public target
+    if: github.event_name == 'workflow_dispatch' && inputs.verify_live_target
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify the deployed landing before profile publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          homepage="$(curl --fail --location --max-time 20 --silent --show-error https://dalgo.io/)"
+          printf '%s' "$homepage" | grep -Fq 'href="/access-policies/"'
+          printf '%s' "$homepage" | grep -Fq '<meta property="og:url" content="https://dalgo.io/"'
+          landing="$(curl --fail --location --max-time 20 --silent --show-error https://dalgo.io/access-policies/)"
+          printf '%s' "$landing" | grep -Fq '<title>Access Policies — DALgo</title>'
+          printf '%s' "$landing" | grep -Fq 'id="start"'
