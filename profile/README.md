@@ -8,6 +8,31 @@ This can help reduce development time and improve code maintainability, while al
 
 It includes an easy-to-use API for querying, inserting, updating, and deleting records, as well as features for handling errors and logging. It also supports transactions.
 
+## 🛡️ Portable Access Policies
+
+DALgo can turn any database handle into an adapter-independent capability:
+extensions, tenants, background jobs, analytics, and support tools receive only
+the paths and operations they need. The boundary covers point reads, queries,
+batches, mutations, and transactions before an adapter is called.
+
+- Hierarchical `Allow(path).Deny(subpath)` and
+  `Deny(path).Allow(selectedSubpaths...)` rules.
+- Independent `Get`, `Exists`, `Query`, `Insert`, `Set`, `Update`, `Delete`,
+  and reserved `Truncate` permissions—write never implies read.
+- Global and context-bound policies compose by intersection, so added policy
+  layers can only narrow access.
+- YAML-first, JSON-equivalent documents load from any storage through
+  `io.Reader`.
+- Custom SQL text is an opaque query capability, denied unless a policy grants
+  it explicitly; path rules never authorize SQL by parsing its text.
+- Explainable denials identify the operation, resource, policy source, and
+  winning rule for trusted logs and developer tooling.
+- The same matcher supports independent audit-event selection without
+  granting data access.
+
+Explore the [interactive access-policies overview](https://dalgo.io/access-policies/)
+or read the [complete repository guide](https://github.com/dal-go/dalgo/blob/main/docs/access-policies.md).
+
 ## 📦 Modules & Packages
 
 - [`github.com/dal-go/dalgo`](https://github.com/dal-go/dalgo) - core package. Go there for docs & more details. Consider giving it a ⭐ 😉.
