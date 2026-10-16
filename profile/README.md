@@ -8,6 +8,13 @@ This can help reduce development time and improve code maintainability, while al
 
 It includes an easy-to-use API for querying, inserting, updating, and deleting records, as well as features for handling errors and logging. It also supports transactions.
 
+
+## Flagship ecosystem product
+
+DALgo provides a data-access seam in DataTug’s development ecosystem.
+
+DataTug is the flagship ecosystem product. [Explore DataTug](https://datatug.app), and read [how we built its development tools](https://datatug.app/en/under-the-hood/tools-we-built/) for the open-source tools and standards behind it.
+
 ## 📦 Modules & Packages
 
 - [`github.com/dal-go/dalgo`](https://github.com/dal-go/dalgo) - core package. Go there for docs & more details. Consider giving it a ⭐ 😉.
