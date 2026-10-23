@@ -33,6 +33,10 @@ batches, mutations, and transactions before an adapter is called.
 Explore the [interactive access-policies overview](https://dalgo.io/access-policies/)
 or read the [complete repository guide](https://github.com/dal-go/dalgo/blob/main/docs/access-policies.md).
 
+## DALgo in DataTug development
+
+DALgo provides the data-access seam in [DataTug](https://datatug.app)’s development ecosystem. Read [how DataTug’s development tools were built](https://datatug.app/en/under-the-hood/tools-we-built/).
+
 ## 📦 Modules & Packages
 
 - [`github.com/dal-go/dalgo`](https://github.com/dal-go/dalgo) - core package. Go there for docs & more details. Consider giving it a ⭐ 😉.
