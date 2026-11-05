@@ -8,6 +8,15 @@ This can help reduce development time and improve code maintainability, while al
 
 It includes an easy-to-use API for querying, inserting, updating, and deleting records, as well as features for handling errors and logging. It also supports transactions.
 
+## ▶ Watch
+
+<p>
+  <a href="https://youtu.be/w0ARYlWoG9g"><img src="assets/dalgo-one-interface-poster.webp" alt="Play the 1:19 film: DALgo — one interface for every database" width="640"></a><br>
+  ▶ <b><a href="https://youtu.be/w0ARYlWoG9g">Watch: DALgo in 79 seconds</a></b>
+</p>
+
+How it works (1:45): [swap the adapter, the developer walkthrough](https://youtu.be/wtkqlcjfzQA)
+
 ## 🛡️ Portable Access Policies
 
 DALgo can turn any database handle into an adapter-independent capability:
